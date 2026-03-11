@@ -6,30 +6,52 @@
 
 This is a **skill** (a markdown-driven instruction set for AI coding assistants like Claude Code and Codebuddy). When loaded, it turns your AI into a personal skill-building coach that walks you through creating your first skill, exploring the skill marketplace, and engineering high-quality skills with tests and benchmarks.
 
-## How to use
+---
 
-### Quick start (Claude Code)
+## For AI -- How to install
 
-```bash
-# Clone to your skills directory
-git clone https://github.com/howoneai/skill-onboarding.git ~/.claude/skills/skill-onboarding
+Copy-paste the following to your AI assistant (Claude Code / Codebuddy / Cursor), it will install itself:
 
-# Start a new conversation and say:
-# "teach me skills" or "I want to learn about skills"
-```
+> Please install the skill-onboarding skill for me:
+>
+> ```bash
+> git clone https://github.com/howoneai/skill-onboarding.git ~/.claude/skills/skill-onboarding
+> ```
+>
+> After cloning, confirm installation by checking if `~/.claude/skills/skill-onboarding/SKILL.md` exists. Then teach me how to create skills -- start from Stage 0.
 
-### Quick start (Codebuddy)
+**Codebuddy users**: replace `~/.claude/` with `~/.codebuddy/`.
 
-```bash
-git clone https://github.com/howoneai/skill-onboarding.git ~/.codebuddy/skills/skill-onboarding
+That's it. Your AI will clone the repo, verify the file, and immediately start teaching you.
 
-# Start a new conversation and say:
-# "teach me skills"
-```
+---
 
-That's it. The AI will automatically detect the skill and guide you through the entire journey.
+## For humans -- How to use (and keep using)
 
-## What you'll learn
+### First time
+
+1. Open a new conversation with your AI
+2. Say **"teach me skills"** or **"I want to learn about skills"**
+3. The AI activates this skill automatically and walks you through 5 stages -- from building your first skill to evaluating quality with benchmarks
+4. You'll come out with at least one working skill you made yourself
+
+### After the first time -- this skill keeps working
+
+This is not a one-time tutorial. It stays installed and keeps being useful:
+
+| Say this to your AI | What happens |
+|---|---|
+| "I want to create a new skill for X" | Walks you through the full creation flow -- scaffold, write, test |
+| "Evaluate my skill" | Runs quality checks on structure, content, and trigger description |
+| "Show me what skills are available" | Scans the marketplace and recommends skills for your workflow |
+| "Optimize my skill's description" | Runs benchmark loops to improve when your skill gets triggered |
+| "Set up a skill inbox" | Creates a folder where you drop materials -- AI turns them into skills |
+
+Think of it as a **permanent skill-building toolkit** inside your AI. Install once, use whenever you need to create, improve, or discover skills.
+
+---
+
+## What you'll learn (Stage overview)
 
 | Stage | What happens |
 |-------|-------------|
@@ -38,9 +60,7 @@ That's it. The AI will automatically detect the skill and guide you through the 
 | 2 | Experience 3 things skills can do that plain prompts can't |
 | 3 | Find, evaluate, and fork skills from the community marketplace |
 | 4 | Graduate with a cheat sheet and daily workflow |
-| 5 (optional) | Get personalized skill recommendations based on your work |
-| 6 (optional) | Set up a "skill inbox" -- drop materials in, AI turns them into skills |
-| 7 (optional) | Engineer skills with test cases, benchmarks, and description optimization |
+| 5+ | (Optional) Personalized recommendations, skill inbox, benchmark engineering |
 
 ## Included tools
 
@@ -62,14 +82,6 @@ assets/
   skill-explainer.html    # Interactive visual explainer
   eval_review.html        # Description optimization review page
 ```
-
-## Tell your AI how to use this
-
-Copy-paste this to your AI:
-
-> I just installed the skill-onboarding skill. Teach me how to create and use skills -- start from Stage 0.
-
-Or simply say "learn skills" / "teach me skills" in a new conversation. The AI will pick it up automatically from the `description` field in `SKILL.md`.
 
 ## License
 
